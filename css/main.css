@@ -1,0 +1,969 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   COLORS
+
+   tan: #dddfd4;
+   yellow: #fae596;
+   aqua: #3fb0ac;
+   dark aqua: #173e43;
+
+   Aqua: #3fb0ac;
+   Blue: #638CA6;
+   Dark Aqua: #0F5959;
+   Light blue: 
+   ========================================================================== */
+ 
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: #3fb0ac;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+    width: 85%;
+    text-align: left;
+    margin: 20px 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/**************************************************************
+BODY
+**************************************************************/
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+li.contact-li {
+    list-style-type: none;
+}
+
+i.fa-envelope-o {
+        padding: 0px 10px;
+    }
+
+a.buy-btn, a.review-btn, a.share-btn {
+    font-size: 1em;
+    width: 20%;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #3fb0ac;
+    color: #3fb0ac;
+}
+ a.buy-btn:hover, a.review-btn:hover, a.share-btn:hover {
+        color:#173e43;
+    }
+
+.bold {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3fb0ac;
+}
+
+
+/**************************************************************
+HEADLINES
+**************************************************************/
+  h1.headline {
+        font-family: Raleway;
+        color: #3fb0ac;
+        font-size: 1.125rem;   
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+}
+
+h4.pre-headline {
+    font-family: Raleway;
+    font-size: 1rem;
+    text-align: center;
+    color: #3FB0AC;
+    margin-top: 0;
+}
+
+h1.headline.blog-headline {
+    margin: 0;
+    text-transform: none;
+}
+
+/**************************************************************
+HEADER
+**************************************************************/
+
+header {
+    width: 100%;
+}
+
+#tablet {
+    display: none;
+}
+
+/**************************************************************
+NAVIGATION
+**************************************************************/
+nav {
+    width: 100%;
+}
+  
+ul#header-menu {
+    list-style-type: none; 
+    text-align: center; 
+    padding: 0;
+}
+
+ul#header-menu li {
+    padding-top: 25px;
+    border-top: 2px solid #3fb0ac;
+    padding-bottom: 25px;
+}
+
+ul#header-menu li#bottom {
+    border-bottom: 2px solid #3fb0ac;
+} 
+
+ul#header-menu a {
+    text-decoration: none;
+    color: #3fb0ac;
+    font-family: Raleway;
+}
+
+#header-menu a:hover {
+    color: #173e43;
+}
+
+ #header-menu a#selected {
+    color: black;
+    font-weight: bold;
+}
+
+/**************************************************************
+IMAGES
+**************************************************************/
+
+.item-img {
+    width: 70%;
+    height: auto;
+    margin:auto;
+    margin-top: 10px;
+
+}
+.logo {
+    width: 46%; 
+    height: auto;
+    margin: 20px auto;
+}
+
+
+figure.blog-img{
+     width: 85%;
+     margin: 0 auto;
+}
+
+figure.blog-img img {
+    margin-top: 15px;
+}
+
+
+/**************************************************************
+ABOUT US 
+**************************************************************/
+ 
+
+/*.staff-img img {
+    width: 25%;
+}*/
+
+p.staff-info {
+
+    text-align: center;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+
+p.staff-info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**************************************************************
+MAIN-CONTENT
+**************************************************************/
+
+ a.read-more {
+    border: 1px solid #3fb0ac;
+    padding: 5px;
+    margin-left: 25px;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+a.read-more:hover: {
+    color: #173e43
+}
+
+.feed-item {
+    width: 100%;
+}
+
+button.see-all {
+    width: 66.8%;
+    margin: 10% 16.6%;
+    border-radius: 10px;
+    color: #3fb0ac;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    background-color: transparent;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.feed-item h3, .feed-item h2, .feed-item h5 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+}
+
+.feed-item h2 { 
+    color: #3fb0ac;
+    margin-top: 75px;
+}
+
+.feed-item h5 {
+    position: relative;
+    bottom: 20px;
+}
+
+
+/**************************************************************
+REVIEWS/INTERVIEWS/ABOUT MAIN CONTENT
+**************************************************************/
+
+h3.review-headline, h3.interview-headline {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 25px;
+}
+
+h3.interview-headline{
+    width: 87%;
+    margin: 15px auto;
+}
+
+h3#reviews-headline.category-title {
+    margin: 25px 0;
+}
+
+h5.review-category {
+    display: none;
+}
+
+h1.interview-headline {
+    display: block;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    margin: 25px auto 25px;
+    width: 70%;
+}
+
+/*p.contact-paragraph {
+    font-size: 1.125rem;
+    margin: 20px 10px;
+}
+*/
+p.about-paragraph, p.contact {
+    font-size: 1.1rem;
+}
+ p.intro {
+    width: 100%;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.staff {
+    padding: 15px 0;
+}
+
+/**************************************************************
+TECH REVIEWS MAIN CONTENT
+**************************************************************/
+h3.category-title {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 40px 0;
+ }
+ 
+
+/**************************************************************
+FOOTER
+**************************************************************/
+
+div#footer-logo {
+    width: 100%;
+    height: 50px;
+    background-color: #dddfd4;
+    margin-top: 50px;
+}
+
+.footer-logo {
+    width: 35%; 
+    height: auto;
+    margin: 20px auto;
+}
+ 
+ 
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media screen and (min-width: 768px) {
+    /*Tablet styles here*/
+
+    p.contact {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    h1.headline {
+        font-family: Raleway;
+        color: #3fb0ac;
+        font-size: 2rem;   
+        font-weight: 700;
+        text-align: center;
+        clear: both;
+        text-transform: uppercase;
+}
+
+    p.review-paragraph, p.interview-paragraph {
+        width: 65%;
+        margin: 0 auto 25px;
+        font-size: 1rem;
+}
+
+  /* Header ================================================================= */
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        width: 46.6%;
+        float: right;
+        margin: 15px 20px 0 15px 
+
+    }
+     div#main-menu {
+         width: 80%;
+        text-align: center;
+        margin: 15px auto 0;
+        height: 60px;
+/*        border-bottom: 2px solid #3fb0ac;
+*/    }
+
+  .logo {
+        width: 33.2%;
+        float: left;
+        margin: 15px 0 40px 15px 
+    }
+
+
+   ul#header-menu li,ul#header-menu li#bottom  {
+    border: none;
+   }
+
+    nav li {
+        padding: 14px;
+        display: inline;
+        font-size: 1rem;
+    }
+
+  
+    li#selected a{
+        color: #7da7d9;
+    }
+
+    li a {
+        font-size: .75rem;
+    }
+
+     /* INTERVIEW page ================================================================= */
+
+    h1.interview-headline {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    p.intro {
+        width: 100%;
+        font-size: .75rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 25px auto;
+    }
+
+    .int-img-main img {
+        width: 45%;
+        margin: 2% 27.5%;
+
+    }
+
+    figure.int-img-main, figure.review-item-img {
+        width: 100%;
+    }
+
+
+
+    /* Add JavaScript to create buttons*/
+
+    /* ABOUT page ================================================================= */
+
+    p.about-paragraph{
+        width: 80.4%;
+        margin: 2% 9.8%;
+        text-align: justify;
+    }
+    .staff-img img {
+        width: 25%;
+    }
+
+    .staff {
+        padding: 0;
+    }
+
+
+/* REVIEW PAGES ================================================================= */
+
+
+    a.read-more {
+        margin-left: 134px;
+        border: 1px solid #3fb0ac;
+        padding: 10px;
+        font-size: 1em;
+        border-radius: 10px;
+
+    }
+
+    a.read-more:hover {
+        color: #173e43;
+    }
+
+    h3.interview-headline, h3.about-headline{
+        color: #3fb0ac;
+    }
+
+    .review-item-img img {
+        width: 50%;
+        margin: 0 153px;
+    }
+
+    button.see-all {
+        display: none;
+    }
+
+   h3.category-title {
+    clear: both;
+    font-size: 1.5rem;
+
+   }
+
+   a {
+    text-decoration: none;
+    color: #3fb0ac;
+   }
+   
+
+
+
+@media screen and (min-width: 940px) {
+    /*Desktop styles here*/
+
+    /* HEADER ================================================================= */
+
+    header {
+        background-color: #DDDFD4;
+        border-bottom: 1px solid #3FB0AC;
+
+    }
+    .logo img {
+        width: 65%;
+     }
+
+    div#main-menu {
+        width: 67%;
+        text-align: center;
+        margin: 15px auto 0;
+        height: 60px;
+    }
+
+    nav {
+        margin: 10px 20px 0px 15px;
+    }
+
+    li a {
+        font-size: .8rem;
+    }
+    /* FOOTER ================================================================= */
+
+    h1.footer-logo img {
+        width: 25%;
+        margin: 0 37.5%;
+
+    }
+    /* BODY ================================================================= */
+    
+    p, p.staff-info {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    p.about-paragraph {
+        width: 45%;
+        margin: 20px auto;
+    }
+
+    p.review-paragraph {
+        font-size: 1.1rem;
+    }
+
+    h1.interview-headline {
+        display: block;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin: 25px auto 25px;
+        width: 70%;
+    }
+
+    p.review-paragraph, p.interview-paragraph, ul.improvements {
+        width: 45%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+     li.fa.fa-star-o p {
+        margin-top: 0;
+        position: relative;
+        bottom: 19px;
+     }
+
+     li.fa.fa-star-o::before{
+        color:#3fb0ac;
+     }
+
+    /* HOME ================================================================= */
+
+.jumbotron {
+    height: 750px;
+    background: url("https://static.pexels.com/photos/6552/nature-person-red-woman.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+    /* ABOUT ================================================================= */
+
+   h3.about-headline {
+        font-size: 2em;
+        margin-top: 50px;
+        margin-bottom: 0;
+        text-align: center;
+        margin-left: auto;
+        font-weight: 200;
+  }
+    /* INTERVIEW DETAIL================================================================= */
+
+    
+    img.feed-item-image-interview {
+        margin-top: 50px;
+    }
+
+    p.intro {
+        width: 100%;
+        font-size: .75rem;
+        letter-spacing: 1px;
+        line-height: 13px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 25px auto;
+    }
+    strong {
+        font-weight: bold;
+    }
+
+    span.q {
+        font-size: 26px;
+        line-height: 27px;
+        color: #3fb0ac;
+        margin: -1px 5px 0 0;
+
+    }
+
+    figure.blog-img{
+     width: 56%;
+     margin: 0 auto;
+}
+  figure.int-img-main {
+
+        margin: 0;
+    }
+
+    
+    /* REVIEW pages ================================================================= */
+
+   
+    .review-item-img img {
+        width: 25%;
+        margin: 0 37.5%;    
+    }
+
+
+    .review-item-img {
+        margin: 0 auto;
+    }
+
+    a.read-more {
+        margin: 10px 359px;
+    }
+
+
+    figure.review-item-img img {
+        margin-top: 25px;
+    }
+
+    a.buy-btn, a.review-btn, a.share-btn {
+
+        width: 11%;
+        margin-left: 27.3%;
+        text-align: center;
+        display: block;
+        padding: 5px;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: 1px solid #3fb0ac;;
+        color: #3fb0ac;
+        margin-top: 15px;
+    }
+    a.buy-btn:hover, a.review-btn:hover, a.share-btn:hover {
+        color: #173e43;
+    }
+
+/* MAIN-INTERVIEW PAGE ================================================================= */
+
+    a.read-more {
+        margin-left: 27.2%;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: 1px solid #3fb0ac;;
+        color: #3fb0ac;
+    }
+
+    img.feed-item-image {
+        margin-top: 50px;
+    }
+
+    h3.interview-headline {
+        text-align: left;
+        margin-left: 27.5%;
+    }
+
+    h3#main{
+        font-size: 2em;
+        margin-top: 50px;
+        text-align: center;
+        margin-left: auto;
+    }
+
+
+    /* BLOG ================================================================= */
+    
+p.blog-paragraph {
+    width: 56%;
+    margin: 2% 22%
+
+}
+
+    /* ABOUT ================================================================= */
+
+img.feed-item-image-staff {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+ 
+
+
